@@ -27,7 +27,7 @@ public class Pawn extends ConcretePiece {
         if (getOwner().isPlayerOne()) {
             return "♙";
         }//get the type by the owner pieces
-        return "♟︎";
+        return "♟";
     }
 
     public String toString() {
