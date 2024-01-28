@@ -32,13 +32,13 @@ public abstract class ConcretePiece implements Piece {
         this.StepsHistory.add(newPosition);
     }
 
-    public Position getLastPosition() {
-        return this.StepsHistory.getLast();//return the last position
-    }
+    // public Position getLastPosition() {
+    //     return this.StepsHistory.getLast();//return the last position
+    // }
 
-    public void undoLastStep() {
-        this.StepsHistory.removeLast();//remove the last step from the list
-    }
+    // public void undoLastStep() {
+    //     this.StepsHistory.removeLast();//remove the last step from the list
+    // }
 
     public void updateDist(int i) {
         this.dist = this.dist + i;
