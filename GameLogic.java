@@ -72,7 +72,7 @@ public class GameLogic implements PlayableLogic {
         }
 
         //prevent from pawns the corners
-        if (Objects.equals(pieceA.getType(), "♙") || Objects.equals(pieceA.getType(), "♟︎")) {
+        if (Objects.equals(pieceA.getType(), "♙") || Objects.equals(pieceA.getType(), "♟")) {
             if ((b.getX() == 0 && b.getY() == 0) || (b.getX() == 0 && b.getY() == 10) || (b.getX() == 10 && b.getY() == 0) || (b.getX() == 10 && b.getY() == 10)) {
                 System.out.println("Invalid move: Pawns cannot move to corner positions.");
                 return false;
@@ -86,7 +86,7 @@ public class GameLogic implements PlayableLogic {
 
         // yeadim lehisul
         //if its pawn it can kill
-        if (Objects.equals(pieceA.getType(), "♙") || Objects.equals(pieceA.getType(), "♟︎")) {
+        if (Objects.equals(pieceA.getType(), "♙") || Objects.equals(pieceA.getType(), "♟")) {
             //killer`s teammate
             Position p = new Position(x2 + 2, y2);
             Position pright = new Position(x2 + 2, y2);
@@ -562,5 +562,3 @@ public class GameLogic implements PlayableLogic {
     }
 
 }
-
-
